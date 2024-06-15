@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <!-- Bootstrap -->
+    <!--     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./dist/style.css" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/80431f89ef.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Javascripts -->
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="nav">
+        <div class="overlay fade"></div>
+        <a class="logo" href="/"><img src="./images/logo.svg" alt="LOGO" /></a>
+        <div class="menu-btn">
+          <img src="./images/icon-menu.svg" />
+        </div>
+        <nav class="nav-bar menu-show">
+          <div class="close-btn">
+            <img src="./images/icon-close-menu.svg" />
+          </div>
+          <ul class="nav-bar-links">
+            <li class="nav-bar-item dropdown-nav-item">
+              <div class="dropdown">
+                <button class="dropdown-toggle btn">
+                  Features<i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-menu" name="features">
+                  <a href="/" class="dropdown-item">
+                    <img src="./images/icon-todo.svg" />
+                    Todo List
+                  </a>
+                  <a href="/" class="dropdown-item">
+                    <img src="./images/icon-calendar.svg" />
+                    Calender
+                  </a>
+                  <a href="/" class="dropdown-item">
+                    <img src="./images/icon-reminders.svg" />
+                    Reminders
+                  </a>
+                  <a href="/" class="dropdown-item">
+                    <img src="./images/icon-planning.svg" />
+                    Planning
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-bar-item dropdown-nav-item">
+              <div class="dropdown">
+                <button class="dropdown-toggle btn">
+                  Company<i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-menu" name="features">
+                  <a href="/" class="dropdown-item">History </a>
+                  <a href="/" class="dropdown-item">Our Team </a>
+                  <a href="/" class="dropdown-item">Blog </a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-bar-item"><a href="/">Careers</a></li>
+            <li class="nav-bar-item"><a href="/">About</a></li>
+          </ul>
+
+          <div class="nav-bar-btns">
+            <button class="btn">Login</button>
+            <button class="btn btn-secondary">Register</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <div class="hero">
+        <div class="hero-content">
+          <h1>Make Remote Work</h1>
+          <p>
+            Get your team in sync, no matter your location. Strealine processes,
+            create team rituals, and watch productivity soar.
+          </p>
+          <button class="btn btn-primary">Learn more</button>
+          <div class="sponsors">
+            <div><img src="./images/client-databiz.svg" /></div>
+            <div><img src="./images/client-audiophile.svg" /></div>
+            <div><img src="./images/client-meet.svg" /></div>
+            <div><img src="./images/client-maker.svg" /></div>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img
+            srcset="
+              ./images/image-hero-desktop.png 1920w,
+              ./images/image-hero-mobile.png   950w
+            "
+            sizes="(max-width: 1920px), (max-width: 950px)"
+            src="./images/image-hero-mobile.png"
+            alt="A man using laptop"
+          />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

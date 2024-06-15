@@ -1,0 +1,126 @@
+// Styles for Desktop
+
+// Globals
+h1 {
+  font-size: 4.3rem;
+}
+p {
+  font-size: 1.125rem;
+}
+
+// Container
+
+.container-fluid {
+  > * {
+    padding-inline: 2.625rem;
+  }
+}
+
+.btn {
+  color: $med-gray;
+
+  &-secondary {
+    border-color: $med-gray;
+  }
+}
+
+// Dropdown
+
+.dropdown {
+  &-menu {
+    position: absolute;
+    width: 220px;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 0;
+  }
+
+  &-item {
+    padding: 0.6rem;
+  }
+
+  .show {
+    padding: 1rem;
+  }
+}
+
+// Header
+
+header {
+  .nav {
+    height: 5.3125rem;
+
+    .logo {
+      img {
+        padding-top: 12px;
+      }
+    }
+    .menu-btn,
+    .close-btn {
+      display: none;
+    }
+
+    .overlay {
+      visibility: hidden;
+    }
+
+    .nav-bar {
+      position: static;
+      background-color: $white;
+      width: auto;
+      height: auto;
+      flex-direction: row;
+      flex-grow: 2;
+      justify-content: space-between;
+
+      &-links {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      &-item {
+        padding-inline: 2rem;
+        color: $med-gray;
+      }
+
+      &-btns {
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+      }
+    }
+  }
+}
+
+// Hero
+main {
+  height: 100%;
+  .hero {
+    padding-inline: 1rem;
+
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    top: -5.3125rem;
+
+    &-img {
+      order: 2;
+    }
+
+    &-content {
+      text-align: left;
+      align-items: flex-start;
+      gap: 4rem;
+
+      p {
+        max-width: 27.5rem;
+      }
+
+      .sponsors {
+        position: relative;
+        bottom: -100px;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import "variables";
+@import "globals";
+@import "animations";
+
+@import "header";
+@import "hero";
+
+@media screen and (min-width: 950px) {
+  @import "styles_desk";
+}
